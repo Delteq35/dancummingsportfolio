@@ -1,0 +1,26 @@
+{
+  "name": "DanCummingsPortfolio",
+  "version": "1.0.0",
+  "description": "Dan Cummings - Portfolio",
+  "keywords": [
+    "11ty",
+    "SASS",
+    "SCSS",
+    "eleventy"
+  ],
+  "author": "Dan Cummings",
+  "license": "",
+  "scripts": {
+    "watch:sass": "node-sass --watch src/sass -o src/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "node-sass src/sass -o src/css",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass --parallel build:*"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
