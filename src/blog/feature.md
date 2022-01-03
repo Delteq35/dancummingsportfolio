@@ -1,5 +1,5 @@
 ---
-title: Feature test
+title: Feature Blog Post
 tags: feature
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+description: I will write a post here in the near future. For now.... it's empty.
 ---
