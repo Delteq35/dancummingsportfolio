@@ -20,6 +20,8 @@
   .dark-theme .blog-single {
     color: #E5F4E3;
     background-image: linear-gradient(to top, #15616d 50%, transparent 40%); }
+  .dark-theme .heroImage {
+    filter: grayscale(100%); }
   .dark-theme .p-link {
     color: #E5F4E3;
     background-image: linear-gradient(to top, #15616d 50%, transparent 40%);

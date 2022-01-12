@@ -45,6 +45,10 @@ $background-dark-theme: #191919;
       background-image: linear-gradient(to top, #15616d 50%, transparent 40%);
   }
 
+  .heroImage {
+    filter: grayscale(100%);
+  }
+
  .p-link {
     color: $font-dark-theme;
     background-image: linear-gradient(to top,#15616d 50%,transparent 40%);
