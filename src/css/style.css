@@ -1,6 +1,8 @@
 .dark-theme {
   color: #E5F4E3;
   background-color: #191919; }
+  .dark-theme .fa-bars {
+    color: #E5F4E3; }
   .dark-theme .skills {
     filter: opacity(30%);
     fill: #14847E; }
