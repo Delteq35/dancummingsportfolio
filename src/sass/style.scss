@@ -46,13 +46,13 @@ $background-dark-theme: #191919;
     background-image: linear-gradient(to top,#15616d 50%,transparent 40%);
       text-decoration: none;
   }
-  h2, {
+  h2 {
     background-image: linear-gradient(to top,#15616d 50%,transparent 40%);
     width:auto;
     display: inline-block;
   }
 
-  h3, {
+  h3 {
     background-image: linear-gradient(to top,#15616d 50%,transparent 40%);
     width:auto;
     display: inline-block;
@@ -72,7 +72,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: row;
-text-align: end;
+    text-align: end;
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -121,6 +121,7 @@ text-align: end;
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-style: solid;
     border-width: 0px;
@@ -137,6 +138,7 @@ text-align: end;
         &:hover {
           text-decoration: underline;
         }
+        
       }
     }
 
@@ -154,6 +156,18 @@ text-align: end;
       svg {
         fill: $font-light-theme;
       }
+    }
+    
+    .hamburger {
+      background-color: transparent;
+      border: 0;
+      display: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .hamburger:focus {
+      outline: none;
     }
   }
 
@@ -309,4 +323,51 @@ h3 {
       width: 90%;
     }
   }
+}
+
+@media screen and (max-width: 797px) {
+
+  h2 {
+    font-size: large;
+  }
+  
+  .heroContent {
+    text-align: center;
+    align-items: center;
+  }
+  #topNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  body nav #topNav.nav-list.show {
+display: flex;
+font-size: x-large;
+align-items: flex-end;
+  }
+
+  body nav .night-mode-btn svg {
+    margin-right: 30px;
+  }
+
+  body nav .hamburger {
+    display: block;
+  }
+}
+body {
+  nav {
+    width: 80%;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  footer {
+    width: 80%;
+  }
+
 }

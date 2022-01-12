@@ -26,3 +26,13 @@ const darkModeState = () => {
 
 nightModeButton.addEventListener("click", darkModeHandler);
 nightModeDiv.addEventListener("load", darkModeState());
+
+
+// hamburger menu
+
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('topNav');
+
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
+});
