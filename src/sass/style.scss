@@ -110,7 +110,8 @@ body {
     margin: 0 auto;
     height: 100%;
     width: auto;
-    flex: auto;
+    // flex: auto;
+    max-width: 120%;
   }
 
   font: 100% $font-stack;
