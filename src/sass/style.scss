@@ -340,6 +340,49 @@ body {
 }
 
 
+
+
+// Gallery Wrap
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  max-width: 100%;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+.item-1 { 
+  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642538892/Screenshot_2022-01-18_at_20.47.25_baoqqc.png');
+}
+
+.item-2 { 
+  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.29.34_omhcco.png');
+}
+
+.item-3 { 
+  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1640962197/187367837_10160986008673626_8489968858152445049_n_pxgreg.jpg');
+}
+
+.item-4 { 
+  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.30.28_nrwu2w.png');
+}
+
+.item-5 { 
+  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.28.12_vfxasr.png');
+}
+
 // @media screen and (max-width: 1150px) {
 //   body {
     
@@ -403,44 +446,11 @@ align-items: flex-end;
   }
 
 }
-}
-
-// Gallery Wrap
 .gallery-wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
+  max-width: 100%;
 }
-
-.item {
-  flex: 1;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  transition: flex 0.8s ease;
-  
-  &:hover{
-    flex: 7;
-  }
-}
-.item-1 { 
-  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642538892/Screenshot_2022-01-18_at_20.47.25_baoqqc.png');
-}
-
-.item-2 { 
-  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.29.34_omhcco.png');
-}
-
-.item-3 { 
-  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1640962197/187367837_10160986008673626_8489968858152445049_n_pxgreg.jpg');
-}
-
-.item-4 { 
-  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.30.28_nrwu2w.png');
-}
-
-.item-5 { 
-  background-image: url('https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.28.12_vfxasr.png');
 }

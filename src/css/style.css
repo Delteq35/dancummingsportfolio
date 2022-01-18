@@ -216,38 +216,12 @@ body main {
 body footer {
   width: 65%; }
 
-@media screen and (max-width: 823px) {
-  h2 {
-    font-size: large; }
-  .heroContent {
-    text-align: center;
-    align-items: center; }
-  #topNav {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px; }
-  body nav #topNav.nav-list.show {
-    display: flex;
-    font-size: x-large;
-    align-items: flex-end; }
-  body nav .night-mode-btn svg {
-    margin-right: 30px; }
-  body nav .hamburger {
-    display: block; }
-  body nav {
-    width: 75%; }
-  body main {
-    width: 75%; }
-  body footer {
-    width: 75%; } }
-
 .gallery-wrap {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 70vh; }
+  height: 70vh;
+  max-width: 100%; }
 
 .item {
   flex: 1;
@@ -273,3 +247,36 @@ body footer {
 
 .item-5 {
   background-image: url("https://res.cloudinary.com/djqrpxhaw/image/upload/v1642537920/Screenshot_2022-01-18_at_20.28.12_vfxasr.png"); }
+
+@media screen and (max-width: 823px) {
+  h2 {
+    font-size: large; }
+  .heroContent {
+    text-align: center;
+    align-items: center; }
+  #topNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px; }
+  body nav #topNav.nav-list.show {
+    display: flex;
+    font-size: x-large;
+    align-items: flex-end; }
+  body nav .night-mode-btn svg {
+    margin-right: 30px; }
+  body nav .hamburger {
+    display: block; }
+  body nav {
+    width: 75%; }
+  body main {
+    width: 75%; }
+  body footer {
+    width: 75%; }
+  .gallery-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%; } }
