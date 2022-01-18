@@ -120,8 +120,8 @@ body {
   background-color: $background-light-theme;
   width: 100vw;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
   
 
   nav {
@@ -319,24 +319,38 @@ h3 {
 .about-img {
   text-align: center;
 }
-@media screen and (max-width: 1150px) {
-  body {
+body {
     
-    nav {
-      width: 90%;
-    }
+  nav {
+    width: 65%;
+  }
 
-    main {
-      width: 90%;
-    }
-  
-    footer {
-      width: 90%;
-    }
+  main {
+    width: 65%;
+  }
+
+  footer {
+    width: 65%;
   }
 }
+// @media screen and (max-width: 1150px) {
+//   body {
+    
+//     nav {
+//       width: 80%;
+//     }
 
-@media screen and (max-width: 797px) {
+//     main {
+//       width: 80%;
+//     }
+  
+//     footer {
+//       width: 80%;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 823px) {
 
   h2 {
     font-size: large;
@@ -367,8 +381,7 @@ align-items: flex-end;
   body nav .hamburger {
     display: block;
   }
-}
-body {
+  body {
   
   nav {
     width: 75%;
@@ -382,4 +395,5 @@ body {
     width: 75%;
   }
 
+}
 }
